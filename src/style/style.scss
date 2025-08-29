@@ -30,6 +30,7 @@ a {
     text-decoration: none;
     color: inherit;
     display: inline-block;
+
     &:hover {
         text-decoration: none;
         color: inherit;
@@ -44,7 +45,7 @@ p {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0; 
+    margin: 0;
 }
 
 .app {
@@ -52,6 +53,7 @@ input::-webkit-inner-spin-button {
     margin: 0 auto;
     padding: 50px 0 50px 0;
     position: relative;
+
     .bg-decoration {
         position: absolute;
         right: -174px;
@@ -73,10 +75,34 @@ main {
     0% {
         opacity: 1
     }
+
     50% {
         opacity: .4
     }
+
     100% {
         opacity: 1
     }
+}
+
+.page-enter {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 300ms ease-in;
+}
+
+.page-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.page-exit-active {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 300ms ease-in;
 }
