@@ -50,7 +50,6 @@ const CharInfo = (props) => {
 // Получение заказа
 // Доставка
 // Получение оплаты
-
 // FSM - finit-state machine
 
 const View = ({ char }) => {
