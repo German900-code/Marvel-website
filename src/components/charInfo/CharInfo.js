@@ -46,6 +46,13 @@ const CharInfo = (props) => {
     )
 }
 
+// Ожидание
+// Получение заказа
+// Доставка
+// Получение оплаты
+
+// FSM - finit-state machine
+
 const View = ({ char }) => {
     const { name, description, thumbnail, homepage, wiki, comics } = char;
 
